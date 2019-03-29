@@ -16,3 +16,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1 / 3, rando
 # fitting the simple linear Regression to the Training set
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
+
+# predicting the result
+y_pred = regressor.predict(X_test)
